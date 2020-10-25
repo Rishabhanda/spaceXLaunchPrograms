@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "bold";
+    src: url('/assets/fonts/Lato-Bold.ttf') format("truetype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "regular";
+    src: url('/assets/fonts/Lato-Regular.ttf') format("truetype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "light";
+    src: url('/assets/fonts/Lato-Light.ttf') format("truetype");
+    font-display: fallback;
+}
