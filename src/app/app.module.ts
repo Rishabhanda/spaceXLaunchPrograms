@@ -12,10 +12,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [
-  { path: '**', component: HomeComponent}
-];
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +26,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]

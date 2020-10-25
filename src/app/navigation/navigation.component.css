@@ -7,7 +7,16 @@
   text-align: center;
 }
 
-@media screen and (min-width: 701px) and (max-width: 1024px){
+.filter-label {
+  text-align: center;
+  font-size: 1rem;
+  color: #8e8e8e;
+  margin: 5px 10px;
+  border-bottom: 1px solid #8e8e8e;
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
   .spacex-btn-container {
     flex: 0 0 100%;
   }

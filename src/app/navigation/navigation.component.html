@@ -5,7 +5,7 @@
 
   <div class="f-item-g-width-100 f-container m-b-1">
     <div class="f-item-g-width-100">
-      <p class="para-light text-align-center">Launch Year</p>
+      <p class="filter-label">Launch Year</p>
     </div>
     <div class="spacex-btn-container m-t-b-03"  *ngFor="let launchYear of launchYears" >
       <app-spacex-button [content]="launchYear" (actionTriggered)="onLaunchYearActionTriggered($event)">
@@ -15,7 +15,7 @@
 
   <div class="f-item-g-width-100 f-container m-b-1">
     <div class="f-item-g-width-100">
-      <p class="para-light text-align-center">Successful Launch</p>
+      <p class="filter-label">Successful Launch</p>
     </div>
     <div class="spacex-btn-container m-t-b-03">
       <app-spacex-button content="true" (actionTriggered)="onLaunchSuccessActionTriggered($event)"></app-spacex-button>
@@ -27,7 +27,7 @@
 
   <div class="f-item-g-width-100 f-container m-b-1">
     <div class="f-item-g-width-100">
-      <p class="para-light text-align-center">Successful Landing</p>
+      <p class="filter-label">Successful Landing</p>
     </div>
     <div class="spacex-btn-container m-t-b-03">
       <app-spacex-button content="true" (actionTriggered)="onLandSuccessActionTriggered($event)"></app-spacex-button>
