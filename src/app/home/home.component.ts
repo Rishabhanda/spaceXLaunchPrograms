@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs';
 })
 export class HomeComponent implements OnInit, OnDestroy {
 
-  launchedMissions;
+  launchedMissions = [];
   subscription: Subscription;
   loadingText = '';
 
