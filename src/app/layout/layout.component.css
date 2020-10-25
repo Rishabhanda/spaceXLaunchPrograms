@@ -4,6 +4,8 @@
 
 .spacex-nav {
   flex: 0 0 10%;
+  position: sticky;
+  top: 12px;
 }
 
 .spacex-main {
@@ -26,6 +28,7 @@
 
   .spacex-nav {
     flex: 1 0 100%;
+    position: static;
   }
 
   .spacex-main {
