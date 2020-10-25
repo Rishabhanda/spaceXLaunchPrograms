@@ -13,6 +13,10 @@
   flex: 0 0 87%;
 }
 
+.spacex-footer {
+  flex: 1 0 100%;
+}
+
 .spacex-container {
   display: flex;
   flex-direction: row;
@@ -34,6 +38,9 @@
 
   .spacex-main {
     flex: 1 0 100%;
+    width: 100%;
+  }
+  .spacex-footer {
     width: 100%;
   }
 }

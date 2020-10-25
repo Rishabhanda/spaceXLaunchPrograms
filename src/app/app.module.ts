@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { Routes, RouterModule } from '@angular/router';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { Routes, RouterModule } from '@angular/router';
     SpacexCardComponent,
     HeaderComponent,
     HomeComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
