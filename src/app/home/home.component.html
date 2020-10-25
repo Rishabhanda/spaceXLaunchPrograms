@@ -1,3 +1,19 @@
-<main>
-    <app-spacex-cards [launchedMissions]="launchedMissions"></app-spacex-cards>
-</main>
+<div class="spacex-container">
+    <div class="spacex-header">
+      <app-header></app-header>
+    </div>
+    <div class="spacex-filters">
+      <app-filters></app-filters>
+    </div>
+    <div class="spacex-main">
+        <main>
+            <app-spacex-cards [launchedMissions]="launchedMissions"></app-spacex-cards>
+        </main>
+    </div>
+    <div class="spacex-footer">
+      <app-footer></app-footer>
+    </div>
+</div>
+  
+
+
