@@ -5,15 +5,22 @@
     <div class="spacex-filters">
       <app-filters></app-filters>
     </div>
-    <div class="spacex-main">
-        <main>
-            <app-spacex-cards [launchedMissions]="launchedMissions"></app-spacex-cards>
+    <div class="spacex-main" [ngClass]="{'loading-text': (loadingText || !launchedMissions.length)}">
+        <main *ngIf="!loadingText; else loading">
+            <app-spacex-cards *ngIf="launchedMissions.length; else noResults" [launchedMissions]="launchedMissions"></app-spacex-cards>
         </main>
     </div>
     <div class="spacex-footer">
       <app-footer></app-footer>
     </div>
 </div>
-  
 
+
+<ng-template #loading>
+    <span class="font-bold">{{loadingText}}</span>
+</ng-template>
+
+<ng-template #noResults>
+    <span class="font-bold">No Results Found</span>    
+</ng-template>
 

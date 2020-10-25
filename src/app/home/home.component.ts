@@ -13,20 +13,26 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   launchedMissions;
   subscription: Subscription;
+  loadingText = '';
 
   constructor(private homeService: HomeService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.subscription = this.route.queryParams.pipe(
       switchMap((queryParams) => {
+        this.loadingText = 'LOADING...';
         return this.homeService.getAllLaunchedMissions(queryParams);
       })
     ).subscribe(
       (data) => {
         this.launchedMissions = data;
+        this.loadingText = '';
         this.scrollToTop();
       },
-      (err) => { console.log(err); });
+      (err) => {
+        console.log(err);
+        this.loadingText = '';
+      });
   }
 
   scrollToTop() {
