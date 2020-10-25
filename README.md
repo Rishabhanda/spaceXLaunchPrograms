@@ -1,6 +1,25 @@
 # SpaceX
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+    Brief: 
+        This project consists spacex launched programs, which displays necessary information of each program and provides ability to filter out the programs based on certain criterias.
+
+    Features:
+        1) Displays all the spacex launched programs.
+        2) Filters spacex programs on basis on launch year, launch success and land success.
+
+    Design UI: 
+        1) Flexbox has used as for the UI design of the website.
+        2) Website is responsive supporting mobile view, tabled view and desktop view.
+        3) No CSS Framework or Library is used.
+        4) Media Queries has been used with break points at (max-width:700), (min-width: 701 and max-width: 1024) and (min-width: 1441).
+
+    Implementation: 
+        1) Project is built on angular 7
+        2) Shared folder consists components(spacex-button, spacex-cards) and services(http.service.ts).
+        3) Header component consists project heading
+        4) Footer component consists developer name
+        5) Home Component consists the main layout
+
 
 ## Development server
 
