@@ -1,15 +1,16 @@
 .spacex-header {
   flex: 1 0 100%;
+  margin-bottom: 1rem;
 }
 
 .spacex-nav {
-  flex: 0 0 10%;
+  flex: 0 0 12%;
   position: sticky;
   top: 12px;
 }
 
 .spacex-main {
-  flex: 0 0 89%;
+  flex: 0 0 87%;
 }
 
 .spacex-container {

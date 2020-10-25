@@ -8,15 +8,11 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class SpacexButtonComponent implements OnInit {
 
   @Input() content = '';
-  @Output() actionTriggered = new EventEmitter<string>();
+  @Input() classes = '';
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  action() {
-    this.actionTriggered.emit(this.content);
   }
 
 }

@@ -29,7 +29,6 @@ export class HttpService {
     }
 
     setParams(queryParams: {}) {
-        // this.setApiHeaders();
         let params = new HttpParams();
         if (queryParams) {
             params = this.getQueryParams(queryParams);
@@ -46,9 +45,4 @@ export class HttpService {
         }
         return params;
     }
-
-    // setApiHeaders(): void {
-    //     const header = { 'Access-Control-Allow-Origin': '*' };
-    //     this.headers = new HttpHeaders(header);
-    // }
 }

@@ -1,4 +1,4 @@
-<nav class="f-container bg-white filters-container p-025">
+<nav class="f-container bg-white filters-container p-1">
   <div class="f-item-g-width-100">
     <h3>Filters</h3>
   </div>
@@ -7,9 +7,11 @@
     <div class="f-item-g-width-100">
       <p class="filter-label">Launch Year</p>
     </div>
-    <div class="spacex-btn-container m-t-b-03"  *ngFor="let launchYear of launchYears" >
-      <app-spacex-button [content]="launchYear" (actionTriggered)="onLaunchYearActionTriggered($event)">
-      </app-spacex-button>
+    <div class="spacex-btn-container m-t-b-03" *ngFor="let launchYear of launchYears" >
+      <span [routerLink]="'/'" [queryParams]="{launch_year: launchYear}" queryParamsHandling="merge" routerLinkActive="" #landYearSuccess="routerLinkActive">
+        <app-spacex-button [content]="launchYear"  [classes]="landYearSuccess.isActive ? 'active': ''">
+        </app-spacex-button>
+      </span>
     </div>
   </div>
 
@@ -18,10 +20,14 @@
       <p class="filter-label">Successful Launch</p>
     </div>
     <div class="spacex-btn-container m-t-b-03">
-      <app-spacex-button content="true" (actionTriggered)="onLaunchSuccessActionTriggered($event)"></app-spacex-button>
+      <span [routerLink]="'/'" [queryParams]="{launch_success: true}" queryParamsHandling="merge" routerLinkActive="" #launchSuccess="routerLinkActive">
+        <app-spacex-button content="true" [classes]="launchSuccess.isActive ? 'active': ''"></app-spacex-button>
+      </span>
     </div>
     <div class="spacex-btn-container m-t-b-03">
-      <app-spacex-button content="false" (actionTriggered)="onLaunchSuccessActionTriggered($event)"></app-spacex-button>
+      <span [routerLink]="'/'" [queryParams]="{launch_success: false}" queryParamsHandling="merge" routerLinkActive="" #launchFail="routerLinkActive">
+        <app-spacex-button content="false" [classes]="launchFail.isActive ? 'active': ''"></app-spacex-button>
+      </span>
     </div>
   </div>
 
@@ -30,10 +36,14 @@
       <p class="filter-label">Successful Landing</p>
     </div>
     <div class="spacex-btn-container m-t-b-03">
-      <app-spacex-button content="true" (actionTriggered)="onLandSuccessActionTriggered($event)"></app-spacex-button>
+      <span [routerLink]="'/'" [queryParams]="{land_success: true}" queryParamsHandling="merge" routerLinkActive="" #landSuccess="routerLinkActive">
+        <app-spacex-button content="true" [classes]="landSuccess.isActive ? 'active': ''"></app-spacex-button>
+      </span>
     </div>
     <div class="spacex-btn-container m-t-b-03">
-      <app-spacex-button content="false" (actionTriggered)="onLandSuccessActionTriggered($event)"></app-spacex-button>
+      <span [routerLink]="'/'" [queryParams]="{land_success: false}" queryParamsHandling="merge" routerLinkActive="" #landFail="routerLinkActive">
+        <app-spacex-button content="false" [classes]="landFail.isActive ? 'active': ''"></app-spacex-button>
+      </span>
     </div>
   </div>
 </nav>
