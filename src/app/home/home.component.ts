@@ -22,8 +22,21 @@ export class HomeComponent implements OnInit, OnDestroy {
         return this.homeService.getAllLaunchedMissions(queryParams);
       })
     ).subscribe(
-      (data) => { this.launchedMissions = data; },
+      (data) => {
+        this.launchedMissions = data;
+        this.scrollToTop();
+      },
       (err) => { console.log(err); });
+  }
+
+  scrollToTop() {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }, 0);
   }
 
   ngOnDestroy() {

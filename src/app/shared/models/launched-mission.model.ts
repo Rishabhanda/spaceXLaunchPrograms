@@ -1,4 +1,4 @@
-export class LaunchMission {
+export class LaunchedMission {
     missionName: string;
     launchYear: string;
     launchSuccess: boolean;

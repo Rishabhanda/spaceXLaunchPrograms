@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { LaunchMission } from 'src/app/models/launch-mission.model';
+import { LaunchedMission } from '../../../models/launched-mission.model';
 
 @Component({
   selector: 'app-spacex-card',
@@ -8,7 +8,7 @@ import { LaunchMission } from 'src/app/models/launch-mission.model';
 })
 export class SpacexCardComponent implements OnInit {
 
-  @Input() launchedMission: LaunchMission;
+  @Input() launchedMission: LaunchedMission;
   constructor() { }
 
   ngOnInit() {

@@ -1,8 +1,24 @@
 .filters-container {
   border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
 }
 
-.spacex-btn-container {
+.filters-heading {
+  flex: 1 0 100%;
+}
+
+.filter-category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 0 100%;
+  margin-bottom: 1rem;
+}
+
+.filter-btn-container {
   flex: 0 0 50%;
   text-align: center;
 }
@@ -11,10 +27,8 @@
   text-align: center;
   font-size: 1rem;
   color: #3c3c3c;
-  /* color: #8e8e8e; */
   margin: 5px 10px;
   border-bottom: 1px solid #3c3c3c;
-  /* border-bottom: 1px solid #8e8e8e; */
   font-size: 0.875rem;
 }
 
