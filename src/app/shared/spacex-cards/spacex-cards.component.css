@@ -16,8 +16,8 @@
 }
 
 .cards-container-flex div {
-  width: 80%;
-  margin: 2rem 0;
+  width: 90%;
+  margin: 1rem 0;
 }
 
 @media screen and (max-width: 700px) {
