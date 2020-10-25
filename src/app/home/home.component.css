@@ -1,3 +1,14 @@
+.parent-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
 .spacex-header {
     flex: 1 0 100%;
     margin-bottom: 1rem;

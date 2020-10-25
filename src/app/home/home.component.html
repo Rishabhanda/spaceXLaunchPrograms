@@ -1,14 +1,16 @@
-<div class="spacex-container">
-    <div class="spacex-header">
-      <app-header></app-header>
-    </div>
-    <div class="spacex-filters">
-      <app-filters></app-filters>
-    </div>
-    <div class="spacex-main" [ngClass]="{'loading-text': (loadingText || !launchedMissions.length)}">
-        <main *ngIf="!loadingText; else loading">
-            <app-spacex-cards *ngIf="launchedMissions.length; else noResults" [launchedMissions]="launchedMissions"></app-spacex-cards>
-        </main>
+<div class="parent-container">
+    <div class="spacex-container">
+        <div class="spacex-header">
+            <app-header></app-header>
+        </div>
+        <div class="spacex-filters">
+            <app-filters></app-filters>
+        </div>
+        <div class="spacex-main" [ngClass]="{'loading-text': (loadingText || !launchedMissions.length)}">
+            <main *ngIf="!loadingText; else loading">
+                <app-spacex-cards *ngIf="launchedMissions.length; else noResults" [launchedMissions]="launchedMissions"></app-spacex-cards>
+            </main>
+        </div>
     </div>
     <div class="spacex-footer">
       <app-footer></app-footer>
