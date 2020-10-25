@@ -21,12 +21,12 @@
     </div>
     <div class="filter-btn-container m-t-b-03">
       <span [routerLink]="'/'" [queryParams]="{launch_success: true}" queryParamsHandling="merge" routerLinkActive="" #launchSuccess="routerLinkActive">
-        <app-spacex-button content="true" [classes]="launchSuccess.isActive ? 'active': ''"></app-spacex-button>
+        <app-spacex-button content="True" [classes]="launchSuccess.isActive ? 'active': ''"></app-spacex-button>
       </span>
     </div>
     <div class="filter-btn-container m-t-b-03">
       <span [routerLink]="'/'" [queryParams]="{launch_success: false}" queryParamsHandling="merge" routerLinkActive="" #launchFail="routerLinkActive">
-        <app-spacex-button content="false" [classes]="launchFail.isActive ? 'active': ''"></app-spacex-button>
+        <app-spacex-button content="False" [classes]="launchFail.isActive ? 'active': ''"></app-spacex-button>
       </span>
     </div>
   </div>
@@ -37,12 +37,12 @@
     </div>
     <div class="filter-btn-container m-t-b-03">
       <span [routerLink]="'/'" [queryParams]="{land_success: true}" queryParamsHandling="merge" routerLinkActive="" #landSuccess="routerLinkActive">
-        <app-spacex-button content="true" [classes]="landSuccess.isActive ? 'active': ''"></app-spacex-button>
+        <app-spacex-button content="True" [classes]="landSuccess.isActive ? 'active': ''"></app-spacex-button>
       </span>
     </div>
     <div class="filter-btn-container m-t-b-03">
       <span [routerLink]="'/'" [queryParams]="{land_success: false}" queryParamsHandling="merge" routerLinkActive="" #landFail="routerLinkActive">
-        <app-spacex-button content="false" [classes]="landFail.isActive ? 'active': ''"></app-spacex-button>
+        <app-spacex-button content="False" [classes]="landFail.isActive ? 'active': ''"></app-spacex-button>
       </span>
     </div>
   </div>
