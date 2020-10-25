@@ -1,0 +1,43 @@
+<div class="card-container">
+  <div class="card-image">
+    <img [src]="launchedMission.missionSmallPatch" [alt]="launchedMission.rocketName">
+  </div>
+  <div class="card-details">
+    <p class="mission-label">{{launchedMission.missionName}} # {{launchedMission.flightNumber}}</p>
+    <div>
+      <span class="mission-label"> 
+        Mission Ids:
+      </span> 
+      <ul>
+        <li class="para-light" *ngFor="let id of launchedMission.missionIds">{{id}}</li>
+      </ul>
+    </div>
+
+    <div>
+      <span class="mission-label"> 
+        Launch Year:
+      </span>
+      <span class="para-light">
+        {{launchedMission.launchYear}}
+      </span>
+    </div>
+
+    <div>
+      <span class="mission-label"> 
+        Successful Launch:
+      </span>
+      <span class="para-light">
+        {{launchedMission.launchSuccess}}
+      </span>
+    </div>
+
+    <div>
+      <span class="mission-label"> 
+        Successful Landing:
+      </span>
+      <span class="para-light">
+        {{launchedMission.landSuccess}}
+      </span>
+    </div>
+  </div>
+</div>

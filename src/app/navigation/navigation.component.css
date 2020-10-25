@@ -1,0 +1,14 @@
+.filters-container {
+  border-radius: 5px;
+}
+
+.spacex-btn-container {
+  flex: 0 0 50%;
+  text-align: center;
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px){
+  .spacex-btn-container {
+    flex: 0 0 100%;
+  }
+}

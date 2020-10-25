@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #eee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h3 {
+  margin: 0;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.para-light {
+  font-size: 1rem;
+  color: #8e8e8e;
+}
+
+/*--------------------------------- flex -------------------------------------------*/
+.f-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.f-item-g-width-100 {
+  flex: 1 0 100%;
+}
+
+.f-item-width-50 {
+  flex: 0 0 50%;
+}
+
+.f-justify-content-between {
+  justify-content: space-between;
+}
+
+
+/* -----------------------------------margins--------------------------------------- */
+.m-t-b-03 {
+  margin: 0.3rem 0;
+}
+
+.m-b-1 {
+    margin-bottom: 1rem;
+}
+
+
+
+/* -----------------------------------paddings--------------------------------------- */
+.p-025 {
+  padding: 0.25rem;
+}
+
+
+
+/*-------------------------------- backgroundColors -------------------------------- */
+.bg-white {
+  background-color: #fff;
+}

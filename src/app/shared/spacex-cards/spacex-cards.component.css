@@ -1,0 +1,41 @@
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.cards-container-flex {
+  flex: 0 0 23%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  margin-right: 1%;
+}
+
+.cards-container-flex div {
+  width: 80%;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 700px) {
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .cards-container-flex {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    
+  }
+
+  .spacex-nav {
+    flex: 1 0 100%;
+  }
+
+  .spacex-main {
+    flex: 1 0 100%;
+  }
+}

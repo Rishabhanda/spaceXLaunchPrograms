@@ -1,0 +1,19 @@
+.spacex-btn {
+  background-color: #92f692;
+  border: none;
+  border-radius: 3px;
+  padding: 7px 10px;
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .spacex-btn {
+    padding: 7px 20px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .spacex-btn {
+    padding: 7px 20px;
+  }
+}
