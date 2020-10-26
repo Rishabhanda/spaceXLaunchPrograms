@@ -7,7 +7,7 @@ import {provideModuleMap} from '@nguniversal/module-map-ngfactory-loader';
 
 import * as express from 'express';
 import {join} from 'path';
-const compression = require('compression');
+import * as compression from 'compression';
 
 
 // Faster server renders w/ Prod mode (dev mode never needed)
