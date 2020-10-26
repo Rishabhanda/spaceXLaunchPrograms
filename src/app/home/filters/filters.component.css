@@ -11,6 +11,12 @@
   margin: 0 12px;
 }
 
+.filters-heading p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.17em;
+}
+
 .filter-category {
   display: flex;
   flex-direction: row;
